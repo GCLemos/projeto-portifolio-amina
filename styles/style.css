@@ -2,6 +2,7 @@
   --cor-primaria: #000000;
   --cor-secundaria: #f6f6f6;
   --cor-terciaria: #ffbdbd;
+  --cor-quaternaria: #ff8383;
   --cor-hover: #313131;
 
   --fonte-principal: 'Krona one', sans-serif;
@@ -28,6 +29,24 @@
   font-size: 1.5rem;
   color: var(--cor-terciaria);
   text-decoration: none;
+  position: relative;
+}
+
+.cabecalho__menu__link::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: var(--cor-secundaria);
+  position: absolute; 
+  left: 0;
+  bottom: -6px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.cabecalho__menu__link:hover::after {
+  opacity: 1;
 }
 
 .apresentacao {
