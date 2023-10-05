@@ -163,7 +163,7 @@ body {
 
 @media (max-width: 1200px) {
   .cabecalho {
-    padding: 10%;
+    padding: 8% 0% 2% 0%;
   }
 
   .cabecalho__menu {
@@ -182,7 +182,7 @@ body {
 }
 
   .apresentacao__imagem {
-    width: 62%;
+    width: 50%;
   }
 
   .apresentacao__conteudo__titulo__nome {
